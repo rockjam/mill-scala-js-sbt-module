@@ -9,6 +9,13 @@ object MainTests extends TestSuite {
       val result = SJSMain.add(1,2)
       assert(result == 3)
     }
+    'hlist - {
+      import shapeless._
+      val l = 1 :: "hello" :: true :: HNil
+      assert(
+        l(1) == "hello"
+      )
+    }
 
   }
 
