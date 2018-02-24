@@ -8,5 +8,5 @@ object SJSMain extends App {
     a :: b :: HNil
   }
 
-  println("hello world")
+  println(s"hello world add: ${add(1,2)}, hlist: ${hlistMake(1, "hello")}")
 }
